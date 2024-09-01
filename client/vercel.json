@@ -8,7 +8,7 @@
   "redirects": [
     {
       "source": "/share/:quizId",
-      "destination": "/index.html",
+      "destination": "/index.html"
     }
   ]
 }
