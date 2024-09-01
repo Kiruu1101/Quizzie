@@ -1,16 +1,25 @@
 {
+    "builds": [
+      {
+        "src": "client/package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "build"
+        }
+      }
+    ],
     "rewrites": [
       {
         "source": "/share/:quizId",
         "destination": "/index.html"
       }
     ],
-    "redirects": [
-      {
-        "source": "/share/:quizId",
-        "destination": "/index.html",
-        "statusCode": 200
-      }
-    ]
+        "redirects": [
+          {
+            "source": "/share/:quizId",
+            "destination": "/index.html",
+            "statusCode": 200
+          }
+        ]
   }
   
