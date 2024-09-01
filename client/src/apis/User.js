@@ -1,6 +1,9 @@
 import { toast } from 'react-toastify';
 import { handleApiRes, handleApiErr } from '../utils/apiUtils';
-const baseURL ="https://kiran-quizzie.onrender.com";
+// const baseURL ="https://kiran-quizzie.onrender.com";
+
+const baseURL ="https://quizzie-server-rnu4.onrender.com";
+
 
 export const userLoginApi = async (userData) => {
     try {
