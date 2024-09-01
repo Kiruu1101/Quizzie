@@ -1,0 +1,58 @@
+.viewAnalytics {
+    min-height: 100vh;
+    background: #EDEDED;
+    padding: 50px 100px;
+    margin-left: 300px;
+    box-sizing: border-box;
+}
+
+.viewAnalytics .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.header h2 {
+    color: #5076FF;
+}
+
+.header p {
+    color: #FF5D01;
+    font-weight: 600;
+}
+
+.viewAnalytics .questions {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.questions h1,
+.questions h2 {
+    font-weight: 500;
+}
+
+.questions .info {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.info .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    width: 260px;
+    height: 100%;
+}
+
+.info .card.pollCard {
+    width: 190px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}

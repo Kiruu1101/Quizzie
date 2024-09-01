@@ -1,0 +1,94 @@
+.dashboard {
+    min-height: 100vh;
+    background: #EDEDED;
+    padding: 70px 100px;
+    margin-left: 300px;
+    box-sizing: border-box;
+}
+
+.dashboard .info {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.info .infoCard {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 280px;
+    font-size: 25px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+.infoCard:first-child {
+    color: #FF5D01;
+}
+
+.infoCard:nth-child(2) {
+    color: #60B84B;
+}
+
+.infoCard:last-child {
+    color: #5076FF;
+}
+
+.infoCard p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: -15px;
+}
+
+.infoCard p span {
+    font-size: 50px;
+}
+
+.dashboard .quizzes {
+    color: #474444;
+}
+
+.quizzes h1 {
+    margin: 50px 0 30px 0;
+}
+
+.quizzes div {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.quizzes .quizCard {
+    background: #fff;
+    width: 250px;
+    padding: 10px 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.quizCard p:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: -10px;
+    width: 100%;
+}
+
+.quizCard p:last-child {
+    color: #60B84B;
+    font-size: 14px;
+}
+
+.quizCard p:first-child span:first-child {
+    font-size: 25px;
+}
+
+.quizCard p:first-child span:last-child {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #FF5D01;
+}

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary-bg: #171923;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+span.error {
+  font-size: 14px;
+  color: #D60000;
+  font-weight: 500;
+}
+
+input:not(input[type=radio]) {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input.error,
+textarea.error {
+  border: 1px solid #D60000 !important;
+}
+
+button {
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  background: inherit;
+}
+
+.Toastify__toast-container {
+  width: fit-content !important;
+}
+
+.brand {
+  font-family: "Jomhuria", serif;
+  font-size: 80px;
+  font-weight: 400;
+  color: #474444;
+}

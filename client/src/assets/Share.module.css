@@ -1,0 +1,133 @@
+.share {
+    min-height: 100vh;
+    background: #041325;
+    align-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background: #fff;
+    padding: 50px 70px;
+    width: 70vw;
+    height: 70vh;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 0px #00000026;
+    overflow: auto;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header h2:last-child {
+    color: #D60000;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin: 30px 0;
+}
+
+.options .card {
+    background: #F0F0F0;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 100%;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.options .card.onlyImage {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.options .card.onlyImage img {
+    width: 100%;
+    height: 230px;
+    margin: auto;
+    object-fit: cover;
+}
+
+.card img {
+    width: 50%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card.active {
+    outline: 5px solid #5076FF;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.submit button {
+    padding: 10px;
+    width: 250px;
+    background: #60B84B;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.submit button:disabled {
+    background: #ddd;
+}
+
+.result {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+.result .score {
+    color: #60B84B;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100vw;
+        height: 100vh;
+        padding: 15px;
+        box-sizing: border-box;
+        border-radius: 0;
+    }
+
+    .question {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .options {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .options .card {
+        padding: 10px 10px 10px 20px;
+    }
+}

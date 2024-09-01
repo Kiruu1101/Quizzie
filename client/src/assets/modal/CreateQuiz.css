@@ -1,0 +1,87 @@
+.createQuizModal {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.createQuizModal .content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.createQuizModal input {
+    padding: 15px 20px;
+    box-shadow: 0px 0px 25px 0px #00000026;
+    border-radius: 10px;
+}
+
+.createQuizModal .quizType,
+.createQuizModal .quizAction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.quizType p {
+    color: #9F9F9F;
+    font-size: 18px;
+}
+
+.quizType button,
+.quizAction button {
+    padding: 5px 20px;
+    box-shadow: 0px 0px 25px 0px #00000026;
+    border-radius: 10px;
+    width: 140px;
+    font-weight: 500;
+    color: #9F9F9F;
+}
+
+.quizAction button {
+    width: 200px;
+}
+
+.quizAction .btnCancel {
+    color: #000;
+}
+
+.quizAction .btnContinue,
+.quizAction .btnDelete,
+.quizAction .btnShare,
+.quizType button.active {
+    background: #60B84B;
+    color: #fff;
+    box-shadow: none;
+}
+
+/* .........delete and share modal.......... */
+
+.deleteTestModal,
+.shareTestModal {
+    align-content: center;
+}
+
+.deleteTestModal h1,
+.shareTestModal h1 {
+    color: #474444;
+    font-weight: 600;
+    text-align: center;
+}
+
+.deleteTestModal .btnDelete {
+    background: #FF4B4B;
+}
+
+.shareTestModal .btnShare {
+    background: #60B84B;
+    margin: auto;
+}
+
+.shareTestModal input {
+    padding: 10px 20px;
+    box-shadow: none;
+    background: #EDEDED;
+}

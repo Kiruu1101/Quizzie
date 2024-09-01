@@ -1,0 +1,71 @@
+.auth {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F2F2F2;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    width: 1000px;
+    padding: 50px;
+    background: #fff;
+    box-shadow: 0px 0px 30px 0px #00000026;
+    border-radius: 15px;
+}
+
+.form .tab {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.form button {
+    padding: 5px 50px;
+}
+
+.tab button.active {
+    box-shadow: 0px 0px 50px 0px #0019FF3D;
+}
+
+.form .input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input .inputs {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.inputs label {
+    width: 150px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.inputs .group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 300px;
+}
+
+.group input {
+    background: #F4F4F4;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.form .submitBtn {
+    width: 250px;
+    background: #A9BCFF;
+    border-radius: 8px;
+}

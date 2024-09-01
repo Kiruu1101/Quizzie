@@ -1,0 +1,171 @@
+.createQuestionModal {
+    width: 100%;
+    border-radius: 10px;
+    padding: 50px;
+    color: #9F9F9F;
+}
+
+.createQuestionModal .header,
+.header .palette {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.header .question {
+    position: relative;
+}
+
+.question .bubble {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px #00000026;
+    cursor: pointer;
+}
+
+.question .delete {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    cursor: pointer;
+}
+
+.createQuestionModal .questionBox,
+.createQuestionModal .optionType {
+    margin: 30px 0;
+}
+
+.optionAndTimer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.questionBox input,
+.optionsPanel input,
+.optionsPanel button {
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px 0px #00000026;
+}
+
+.createQuestionModal .optionType {
+    display: flex;
+    gap: 40px;
+}
+
+.optionType .radioBox,
+.optionsPanel .radioBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.radioBox input[type=radio] {
+    height: 20px;
+    width: 20px;
+    box-shadow: none;
+}
+
+.optionAndTimer .optionsPanel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.optionsPanel .radioBox {
+    gap: 25px;
+}
+
+.optionsPanel .radioBox .inputWraps {
+    display: flex;
+    gap: 20px;
+}
+
+.optionsPanel .radioBox button {
+    width: 400px;
+    text-align: center;
+    color: #9F9F9F;
+    font-weight: 500;
+}
+
+.optionsPanel .radioBox .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.optionsPanel .radioBox .btnRemOption {
+    position: absolute;
+    top: 15px;
+    right: -40px;
+    cursor: pointer;
+}
+
+.optionsPanel .radioBox input[type=text],
+.optionsPanel .radioBox button {
+    padding: 12px 20px;
+    width: 280px;
+}
+
+.optionsPanel .radioBox input[type="radio"]:checked+.inputWraps .inputs input[type="text"] {
+    background: #60B84B;
+    color: #fff;
+    box-shadow: none;
+}
+
+.optionAndTimer .timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.timer button,
+.qsnAction button {
+    padding: 5px;
+    width: 80px;
+    border-radius: 10px;
+    color: #9F9F9F;
+    font-weight: 500;
+    box-shadow: 0px 0px 15px 0px #00000026;
+}
+
+.timer button.active {
+    background: #D60000;
+    color: #fff;
+    box-shadow: none;
+}
+
+.createQuestionModal .qsnAction {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+.qsnAction,
+.optionsPanel .radioBox button {
+    margin-left: 49px;
+}
+
+.qsnAction.pollAction,
+.optionsPanel .radioBox button.pollOption {
+    margin-left: 0;
+}
+
+.qsnAction button {
+    width: 280px;
+    padding: 10px;
+    color: #000;
+}
+
+.qsnAction .btnCreateQuiz {
+    background: #60B84B;
+    color: #fff;
+}
