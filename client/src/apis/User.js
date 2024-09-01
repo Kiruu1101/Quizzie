@@ -1,6 +1,6 @@
 import { toast } from 'react-toastify';
 import { handleApiRes, handleApiErr } from '../utils/apiUtils';
-const baseURL = import.meta.env.VITE_API_BASE_URL;
+const baseURL ="https://kiran-quizzie.onrender.com";
 
 export const userLoginApi = async (userData) => {
     try {
