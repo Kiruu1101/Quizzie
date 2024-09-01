@@ -1,6 +1,6 @@
 import { toast } from 'react-toastify';
 import { handleApiRes, handleApiErr } from '../utils/apiUtils';
-const baseURL = "https://kiran-quizzie.onrender.com";
+const baseURL ="https://kiran-quizzie.onrender.com";
 
 export const fetchQuizApi = async (token, quizId) => {
     try {
